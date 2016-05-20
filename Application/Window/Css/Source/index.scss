@@ -1,0 +1,52 @@
+@import "Selector/index";
+@import "Layout/index";
+@import "Appearance/index";
+
+#{$reset-elements}
+{
+    @include reset-layout;
+    @include reset-appearance;
+}
+
+#{$app-elements}
+{
+    @include app-layout;
+}
+
+body
+{
+    @include flex-row-layout;
+}
+
+.stranger
+{
+    @include stranger-section-layout;
+}
+
+#{$stranger-button}
+{
+    @include stranger-button-layout;
+    @include button-appearance-reset;
+}
+
+.stranger::after
+{
+    @include psuedo-vertical-border-layout;
+    @include psuedo-vertical-border-appearance;
+}
+
+.conversation
+{
+    @include conversation-section-layout;
+}
+
+.chatInput
+{
+    @include chat-input-layout;
+    @include chat-input-appearance;
+}
+
+.chatInput
+{
+    border-top: 1px solid rgb(100, 100, 100);
+}

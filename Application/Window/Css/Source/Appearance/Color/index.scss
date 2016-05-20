@@ -1,0 +1,9 @@
+$color-background-default: black;
+
+$color-text-default: white;
+
+@mixin reset-color {
+    background-color: $color-background-default;
+
+    color: $color-text-default;
+}

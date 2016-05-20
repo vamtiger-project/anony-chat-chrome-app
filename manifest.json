@@ -1,0 +1,14 @@
+{
+    "name": "AnonyChat",
+    "description": "This is an anonymous chat client.",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "app": {
+        "background": {
+            "page": "Application/Background/index.html"
+        }
+    },
+    "permissions": [
+        "storage"
+    ]
+}
